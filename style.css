@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ffffff;
+}
+
+header h1 {
+  margin: 0 20px;
+  color: #ffffff;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+}
+
+#search {
+  width: 230px;
+  height: 30px;
+  border: 1px solid black;
+  outline: none;
+  background: #f2f2f2;
+  font-size: 16px;
+  border-radius: 3px;
+  padding-left: 15px;
+}
+
+input {
+  caret-color: #1ea896;
+}
