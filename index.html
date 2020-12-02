@@ -4,20 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+    />
     <title>Movie App</title>
   </head>
   <body>
-    <!--title and header-->
+    <!--header including search bar-->
     <header>
-      <a href="#"><h1>Movies</h1></a>
       <form id="form" autocomplete="off">
-        <input type="text" id="search" placeholder="Titles" class="search" />
+        <input class="search" type="text" id="search" placeholder="Search" />
       </form>
     </header>
 
     <!--where movies from API will be placed-->
-    <main id="main"></main>
+    <main id="main">
+      <div class="movie">
+        <img src="" alt="" />
+        <div class="movie-information">
+          <span class="movie-rating"></span>
+          <h3>Movie Title</h3>
+        </div>
+        <div class="movie-summary">
+          <h3>Summary</h3>
+        </div>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
