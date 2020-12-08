@@ -20,13 +20,14 @@ header {
   background-color: #346cc7;
   border: 1px solid #22457d;
   font-family: "Oxygen", sans-serif;
-  padding: 1rem;
-  border-radius: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 50px;
+
   color: #f5f5f5;
 }
 
 .search::placeholder {
-  color: #787878;
+  color: #dcdcdc;
 }
 
 .search:focus {
@@ -43,7 +44,7 @@ main {
   flex-wrap: wrap;
 }
 
-.movie-poster {
+.movie {
   width: 300px;
   margin: 1rem;
   background-color: #346cc7;
@@ -52,7 +53,7 @@ main {
   border-radius: 2px;
 }
 
-.movie-poster img {
+.movie img {
   width: 100%;
 }
 
@@ -69,17 +70,13 @@ main {
 }
 
 .movie-information span {
-  background-color: #083378;
+  background-color: #09419c;
   color: #f5f5f5;
   padding: 0.25rem 0.5rem;
   font-weight: bold;
 }
 
-.movie-information span:hover {
-  color: pink;
-}
-
-.movieText-overlay {
+.overview {
   background-color: #f5f5f5;
   color: #030303;
   position: absolute;
@@ -88,10 +85,74 @@ main {
   left: 0;
   right: 0;
   max-height: 100%;
-  transform: translateY(101%);
+  transform: translateY(100%);
   transition: transform 0.2s ease-in;
 }
 
-.movie:hover .movieText-overlay {
+.movie:hover .overview {
   transform: translateY(0);
 }
+
+button {
+}
+button.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  padding: 1rem 1rem;
+  margin-top: 48.9%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+  height: 5px;
+  text-decoration: none;
+  background: #0069ed;
+  color: #f5f5f5;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: 250ms ease-in-out, transform 150ms ease;
+}
+
+button {
+  outline: none;
+}
+
+button:hover,
+button:focus {
+  background: #0053ba;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+/*
+
+.buttons {
+  position: inline-block;
+  border: none;
+  margin-bottom: 100%;
+  padding: 0.5rem;
+  margin: 1rem;
+  height: 3rem;
+  outline: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #f5f5f5;
+  background-color: #346cc7;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+button:focus {
+  background-color: #083378;
+}
+*/
