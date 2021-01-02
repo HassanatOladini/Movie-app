@@ -36,7 +36,7 @@ header {
 }
 
 input {
-  caret-color: #1ea896;
+  caret-color: #df0c17;
 }
 
 main {
@@ -93,15 +93,12 @@ main {
   transform: translateY(0);
 }
 
-button {
-}
 button.buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: none;
   padding: 1rem 1rem;
-  margin-top: 48.9%;
+  margin-top: 48%;
   margin-bottom: 2%;
   margin-left: 5%;
   margin-right: 2%;
@@ -114,10 +111,6 @@ button.buttons {
   cursor: pointer;
   text-align: center;
   transition: 250ms ease-in-out, transform 150ms ease;
-}
-
-button {
-  outline: none;
 }
 
 button:hover,
@@ -133,26 +126,3 @@ button:focus {
 button:active {
   transform: scale(0.99);
 }
-
-/*
-
-.buttons {
-  position: inline-block;
-  border: none;
-  margin-bottom: 100%;
-  padding: 0.5rem;
-  margin: 1rem;
-  height: 3rem;
-  outline: none;
-  border-radius: 3px;
-  font-weight: bold;
-  color: #f5f5f5;
-  background-color: #346cc7;
-  cursor: pointer;
-  transition: 250ms ease-in-out;
-}
-
-button:focus {
-  background-color: #083378;
-}
-*/
