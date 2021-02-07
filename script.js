@@ -1,7 +1,7 @@
 const discover_url =
-  "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key= *insert key here* ;
+  "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key= INSERTKEY ;
 const search_url =
-  "https://api.themoviedb.org/3/search/movie?sort_by=popularity.desc&api_key= *insert key here*;
+  "https://api.themoviedb.org/3/search/movie?sort_by=popularity.desc&api_key= INSERTKEY;
 const image_path = "https://image.tmdb.org/t/p/w1280";
 
 const main = document.getElementById("main");
